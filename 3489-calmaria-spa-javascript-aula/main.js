@@ -13,6 +13,7 @@ function alternarModal(modalId, abrir) {
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     alternarModal("ver-modal-inscrito", false);
+    alternarModal("ver-modal-contato", false);
 
     document.querySelectorAll(".cabecalho_lista-item").forEach((item) => {
       alternarSubmenu(item, false);
